@@ -62,6 +62,12 @@ main{
 
 .quote{
     width: 60vw;
+    transition: .5s;
+    z-index: 0;
+
+}
+.quote:hover{
+    transform: scale(1.2);
 }
 
 a:visited{
@@ -133,6 +139,7 @@ header{
     display: flex;
     align-items: center;
     top: 0;
+    z-index: 3;
 
     background-image: linear-gradient(rgb(154, 252, 250), rgba(254, 238, 251, 0.4));
 }
@@ -148,13 +155,15 @@ header{
 
 .logo-img{
     max-width: 95%;
+    transition: .5s;
+
+
 }
 
 .logo-img:hover{
     transform: rotate(-3deg)
     rotateX(-10deg);
     
-    transition: .5s;
 }
 
 .top-nav{
@@ -185,16 +194,21 @@ header{
     display: inline-flex;
     /* justify-content: center; */
     z-index: 5;
+    transition: .3s;
+
+}
+
+.menu .active{
+    text-shadow: #ff00d4 2px 2px 3px;
 }
 
 
 .menu a:hover{
-    transition: .2s;
     color: rgb(231, 143, 255);
+    transition: .3s;
 }
 
 .menu a:active{
-    transition: .2s;
     color: rgb(101, 87, 255);
 }
 
