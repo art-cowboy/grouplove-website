@@ -6,6 +6,10 @@
     list-style-type: none;
 }
 
+.main-items{
+    border: 3px red dashed;
+}
+
 @keyframes banner {
     0%{
         transform: translateX(-100%);
@@ -39,6 +43,7 @@ p{
 }
 
 main{ 
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,16 +63,12 @@ main{
     padding-top: calc(11% + 3vw);
 }
 
-
-
-.quote{
-    width: 60vw;
-    transition: .5s;
-    z-index: 0;
-
-}
-.quote:hover{
-    transform: scale(1.2);
+h1{
+    font-family: around;
+    padding: .5rem;
+    color: rgb(101, 87, 255);
+    text-decoration: overline underline;
+    text-decoration-color:#ff00d4;
 }
 
 a:visited{
@@ -156,8 +157,6 @@ header{
 .logo-img{
     max-width: 95%;
     transition: .5s;
-
-
 }
 
 .logo-img:hover{
@@ -183,6 +182,39 @@ header{
     background-color: rgb(221, 255, 228);
 }
 
+.quote{
+    /* width: 100vw; */
+    transition: .5s;
+    z-index: 0;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.quote:hover{
+    transform: scale(1.2);
+}
+
+.intro-slice{
+    max-width: 75vw;
+    padding: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.intro-slice a{
+    
+}
+
+.intro-slice img{
+    max-width: 30vw;
+    max-height: 30vh;
+    padding: 1rem;
+}
+
+
 .menu a{
     
     font-family: around;
@@ -190,6 +222,7 @@ header{
     /* text-shadow: rgb(201, 255, 38)  3px 2px 3px; */
     
 }
+
 .menu{
     display: inline-flex;
     /* justify-content: center; */
